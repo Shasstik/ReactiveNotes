@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Shasstik/ReactiveNotes/static/css/main.a6242e0d.css",
+    "main.js": "/Shasstik/ReactiveNotes/static/js/main.49bdb992.js",
+    "index.html": "/Shasstik/ReactiveNotes/index.html",
+    "main.a6242e0d.css.map": "/Shasstik/ReactiveNotes/static/css/main.a6242e0d.css.map",
+    "main.49bdb992.js.map": "/Shasstik/ReactiveNotes/static/js/main.49bdb992.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a6242e0d.css",
+    "static/js/main.49bdb992.js"
+  ]
+}
