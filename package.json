@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "build": "react-scripts build",
+    "start": "react-scripts start",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
@@ -27,5 +31,10 @@
   "devDependencies": {
     "gh-pages": "^6.3.0"
   },
-  "homepage": "https://github.com/Shasstik/ReactiveNotes"
+  "homepage": "https://Shasstik.github.io/ReactiveNotes",
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-scripts": "^5.0.1"
+  }
 }
