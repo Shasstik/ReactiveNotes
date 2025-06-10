@@ -1,0 +1,26 @@
+.theme-toggle {
+  display: flex;
+  gap: 8px;
+  padding: 10px;
+  background: var(--toggle-bg);
+  border-radius: 50px;
+}
+
+.theme-option {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  padding: 8px 12px;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.theme-option:hover {
+  background: var(--toggle-option-hover);
+}
+
+.theme-option.active {
+  background: var(--toggle-option-active);
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}

@@ -1,0 +1,87 @@
+.note {
+  padding: 15px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+/* Цветная полоска вверху стикера */
+.note::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+}
+
+/* Основной фон стикера */
+.note.yellow { 
+  background-color: var(--yellow-bg);
+  border: 1px solid rgba(255, 213, 79, 0.3); /* Легкая граница в цвет акцента */
+}
+.note.blue { 
+  background-color: var(--blue-bg);
+  border: 1px solid rgba(25, 118, 210, 0.3);
+}
+.note.pink { 
+  background-color: var(--pink-bg);
+  border: 1px solid rgba(194, 24, 91, 0.3);
+}
+.note.green { 
+  background-color: var(--green-bg);
+  border: 1px solid rgba(56, 142, 60, 0.3);
+}
+
+/* Цвет полоски */
+.note.yellow::before { background-color: var(--yellow-accent); }
+.note.blue::before { background-color: var(--blue-accent); }
+.note.pink::before { background-color: var(--pink-accent); }
+.note.green::before { background-color: var(--green-accent); }
+
+.note:hover {
+  transform: translateY(-5px);
+}
+
+.note-content {
+  padding-top: 10px;
+}
+
+.note-text {
+  margin: 0;
+  flex-grow: 1;
+  word-break: break-word;
+  color: var(--text-color);
+}
+
+.note-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.note-date {
+  font-size: 0.8rem;
+  color: var(--text-color);
+  opacity: 0.7;
+}
+
+.delete-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  padding: 5px;
+  color: var(--text-color);
+  z-index: 1;
+}
+
+.delete-button:hover {
+  color: var(--delete-hover);
+}
